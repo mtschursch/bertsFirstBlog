@@ -5,8 +5,9 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "clean": "rm -rf node_modules build .cache",
     "start": "strapi start",
-    "build": "strapi build",
+    "build": "npm install && strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
